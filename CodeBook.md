@@ -3,6 +3,8 @@
 This code book describes the variables, the data, and any transformations or work that were performed
 to clean up the data.
 
+The initial data set can be found here: https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project
+
 #Merging the 2 Data Sets
 
 The initial data was provided in 2 data sets:
