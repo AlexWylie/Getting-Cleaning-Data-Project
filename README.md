@@ -49,6 +49,20 @@ The dataset includes the following files:
 - 'run_analysis.R': RScript that reads and tidies the data set. It then returns a table with the averages of each
 mean/standard deviation variable for each activity and each subject. The data set can be found here: https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project.
 
+#run_analysis.R Step-by-Step
+
+1. Load the test and train data with the features as the column names.
+2. Load the subjects numbers.
+3. Load the activity numbers that we will use to merge the test and train datasets.
+4. Column bind the subject numbers to their respective data set.
+5. Column bind the activity numbers to their respective data set.
+6. Merge the 2 data sets.
+7. Subset columns that calculate mean or standard deviation for each column. Also subset the activity and subject columns.
+8. Substitute the activity numbers with descriptive activity names using mgsub() in dqap package.
+9. Tidy up variable names by making column names lower case, removing full stops, removing the numbers at the beginning and replacing "t"/"f" with "time"/"freq".
+10. Using the reshape2 package, melt the data set and then cast the melted data set to summarise the averages of each variable.
+11. Write the tidy data set as a text file in the working directory.
+
 Notes: 
 ======
 - Features are normalized and bounded within [-1,1].
