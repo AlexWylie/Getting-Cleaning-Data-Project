@@ -10,6 +10,8 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
 ==================================================================
+Within this repositoy is a script named run_analysis.R, which receives data from the below experiments.
+It then tidies the data set and returns a smaller data set with the averages of each variable for each activity and each subject.
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
 Each person performed six activities (walking, walkingUpstairs, walkingDownstairs, sitting, standing, laying) 
@@ -40,29 +42,10 @@ The dataset includes the following files:
 
 - 'README.txt'
 
-- 'features_info.txt': Shows information about the variables used on the feature vector.
+- 'CodeBook.md': Provides further information on the variables, the data, and any transformations or work that I performed to clean up the data 
 
-- 'features.txt': List of all features.
-
-- 'activity_labels.txt': Links the class labels with their activity name.
-
-- 'train/X_train.txt': Training set.
-
-- 'train/y_train.txt': Training labels.
-
-- 'test/X_test.txt': Test set.
-
-- 'test/y_test.txt': Test labels.
-
-The following files are available for the train and test data. Their descriptions are equivalent. 
-
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
-
-- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
-
-- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+- 'run_analysis.R': RScript that reads and tidies the data set. It then returns a table with the averages of each
+mean/standard deviation variable for each activity and each subject. The data set can be found here: https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project.
 
 Notes: 
 ======
