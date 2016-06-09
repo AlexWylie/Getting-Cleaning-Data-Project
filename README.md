@@ -10,8 +10,10 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
 ==================================================================
-Within this repositoy is a script named run_analysis.R, which receives data from the below experiments.
+Within this repository is an RScript named run_analysis.R, which receives data from the below experiments.
 It then tidies the data set and returns a smaller data set with the averages of each variable for each activity and each subject.
+
+#Experiment:
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
 Each person performed six activities (walking, walkingUpstairs, walkingDownstairs, sitting, standing, laying) 
